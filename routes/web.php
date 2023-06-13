@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,3 +31,6 @@ Route::get('/signup', function () {
 Route::get('/login', function () {
     return view('login');
 });
+//controller routes
+Route::get('/process_signup', [controller::class, 'create']);
+ 

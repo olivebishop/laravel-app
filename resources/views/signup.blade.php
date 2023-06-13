@@ -19,7 +19,7 @@
       margin-top: 50px;
     }
 
-    .signup-form h2 {
+    .signup-form h1 {
       color: blue;
       margin-bottom: 30px;
     }
@@ -38,41 +38,27 @@
       background-color: darkblue;
       border-color: darkblue;
     }
-
-    .login-link {
-      color: black;
-    }
-
-    .login-link:hover {
-      color: blue;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
-@include('navbar')
+  @include('navbar')
+
   <div class="container">
     <div class="signup-form">
-      <h2>Sign Up</h2>
-      <form>
+      <h1>Signup</h1>
+      <form action="/process_signup">
         <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          <input type="text" class="form-control" name="username" placeholder="Enter username">
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          <input type="email" class="form-control" name="email" placeholder="Enter email">
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          <input type="password" class="form-control" name="password" placeholder="Enter password">
         </div>
         <div class="mb-3">
-          <label for="confirmPassword" class="form-label">Confirm Password</label>
-          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+          <input type="submit" class="btn btn-primary" name="signup" value="Sign Up">
         </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-        <p class="text-center mt-3">Already have an account? <a href="/login" class="login-link">Login here</a></p>
       </form>
     </div>
   </div>
