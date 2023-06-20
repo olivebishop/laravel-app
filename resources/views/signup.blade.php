@@ -44,7 +44,8 @@
   @include('navbar')
 
   <div class="container">
-    <div class="signup-form">
+    <div class="signup-form"method="POST">
+      @csrf
       <h1>Signup</h1>
       <form action="/process_signup">
         <div class="mb-3">
@@ -60,6 +61,7 @@
           <input type="submit" class="btn btn-primary" name="signup" value="Sign Up">
         </div>
       </form>
+      <p>Do you have an account? <a href="/login">Login</a></p>
     </div>
   </div>
 

@@ -59,13 +59,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="/">home</a></li>
           <li class="nav-item"><a class="nav-link" href="/about">about</a></li>
           <li class="nav-item"><a class="nav-link" href="/service">services</a></li>
           <li class="nav-item"><a class="nav-link" href="/contact">contact</a></li>
           <li class="nav-item">
-            <a class="btn btn-primary ms-3" href="/signup">Sign Up</a>
+            <a class="btn btn-primary" href="/signup">Sign Up</a>
           </li>
         </ul>
       </div>
