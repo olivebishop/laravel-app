@@ -44,10 +44,11 @@
   @include('navbar')
 
   <div class="container">
-    <div class="signup-form"method="POST">
-      @csrf
+    <div class="signup-form">
+      
       <h1>Signup</h1>
-      <form action="/process_signup">
+      <form action="/process_signup" method="POST">
+        @csrf
         <div class="mb-3">
           <input type="text" class="form-control" name="username" placeholder="Enter username">
         </div>

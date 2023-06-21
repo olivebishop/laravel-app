@@ -53,15 +53,17 @@
 @include('navbar')
   <div class="container">
     <div class="login-form">
+      
       <h2>Login</h2>
-      <form>
+      <form action="/process_login" method="POST">
+        @csrf
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
         <p class="text-center mt-3">Don't have an account? <a href="/signup" class="signup-link">Sign up here</a></p>
